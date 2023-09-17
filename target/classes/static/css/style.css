@@ -1,0 +1,18 @@
+body {
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+.container{
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+  background: var(#e8cb9a);
+  color:var(#623307);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+  border-style: double;
+  border:5rem auto;
+}
+
