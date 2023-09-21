@@ -7,7 +7,7 @@ Juan Sebastian Camargo Sanchez
 
 ### PARTE I. - JUGANDO A SER UN CLIENTE HTTP
 *Dado que el servidor de la escuela bloque el uso de telnet y esta porotegido no se pudo hacer la ototalida de este punto*
-
+![img.png](img.png)
 
 - ¿Qué codigo de error sale?, revise el significado del mismo en la lista de códigos de estado HTTP.
 - ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?
