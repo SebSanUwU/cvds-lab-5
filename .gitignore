@@ -1,6 +1,7 @@
-target
+.idea/
+target/
 .DS_Store
 /nbproject/
-.idea
+
 *.iml
 
