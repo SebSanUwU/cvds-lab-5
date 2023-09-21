@@ -76,9 +76,20 @@ Para esto usaremos la documentación oficial de Spring con que que aprenderemos 
 
 Después de terminar el aprendizaje analice:
 - ¿Por qué MVC obtiene ese nombre? (puede apoyarse de https://www.javatpoint.com/spring-mvc-tutorial) 
+
+El modelo contien toda la data para la aplicación. El controllador maneja la logica de la app. La vista presenta la informacion en un formato . Y por ultimo el Front controller que es el encargado de manejar el flujo de la app MVD.
+
 - ¿Cuáles son las ventajas de usar MVC?
+
+La separación de la app en tres componentes distintos facilita su gestion, mantenimiento y escalabilidad. Loq ue la hace útil para el desarrollo de apliaciones complejas y de larga duración.
+
 - ¿Qué diferencia tiene la estructura de directorios de este proyecto comparado con las de proyectos pasados (con solo maven y java EE)?
+
+Este proyecto tiene un directorio extra para guardar los recursos HTML y CSS.
+
 - ¿Qué anotaciones usaste y cuál es la diferencia entre ellas?
+
+Para este nuevo directorio se uso el nombre de "resources" y se guardaran archivos .html o .css.
 
 ### PARTE III. - APLICACIÓN MVC PARA CONSUMO DE SERVICIO RESTful
 Usando la arquitectura MVC del punto anterior (el proyecto anterior), realice una aplicación simple qué permita navegar gráficamente sobre esta API
@@ -86,7 +97,12 @@ https://jsonplaceholder.typicode.com/todos/1, puede guiarse de tutoriales como h
 
 Luego de terminada esta parte responda:
 - ¿Qué es RESTful?
+
+REST deriva de “REpresentational State Transfer”. Es una técnica de arquitectura de software, es decir, un conjunto de principios y patrones de comunicación que ayudan a crear una forma de pensar y construir las APIs. El RESTful es la implementacion de la técnica.
+
 - Si utilizo un framework como [Boostrap CSS](https://getbootstrap.com/) para qué el apartado gráfico se vea más profesional, ¿en qué capa se haría su uso?
+
+Se utilizo en la capa View ya que es la representación de la información proveído.
 
 ### PARTE IV. - APLICACIÓN MVC JUEGO
 ¡Llego la hora del reto! Teniendo las bases del uso del framework, cree una nueva ruta, por ejemplo `/guess`, y agrege formulario básico con un campo llamado "número" (guía de como crear formularios HTML https://www.w3schools.com/html/)
@@ -100,6 +116,9 @@ se reduce en $10.000, como en los juegos de apuesta, es natural qué quede en sa
 
 Analice las siguientes situaciones:
 - ¿Qué pasa si abro el sitio de juegos en dos navegadores difententes?
+
+Ambos jugadores estan compartiendo una misma instancia de Guess, la calse que diseñe para el funcionamiento del juego.
+
 - Si quisiera qué a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
 
 ## ENTREGA

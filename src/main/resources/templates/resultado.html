@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Guess Game</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h2>Felicidades Ganaste </h2>
+<p>¡Aquí esta tu premio <span th:text="${guess.premio}"></span>!</p>
+<p><a href="/guess/reset">Reiniciar el juego</a></p>
+</body>
+</html>

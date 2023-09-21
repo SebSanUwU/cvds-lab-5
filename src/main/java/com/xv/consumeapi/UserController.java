@@ -11,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class UserController {
 
+
     @RequestMapping("/user/{id}")
     @ResponseBody
     private ModelAndView getUser(@PathVariable Integer id, Model model){
