@@ -1,73 +1,18 @@
 # LABORATORIO 5 - SPRING MVC INTRODUCTION
 
+Integrantes
+Juan Sebastian Camargo Sanchez
+
 #### INTRODUCCIÓN A PROYECTOS WEB
 
 ### PARTE I. - JUGANDO A SER UN CLIENTE HTTP
-1. Abra una terminal Linux o consola de comandos Windows.
-2. Realice una conexión síncrona TCP/IP a través de Telnet al siguiente servidor:
-- Host: www.escuelaing.edu.co
-- Puerto: 80
-Teniendo en cuenta los parámetros del comando telnet:
+*Dado que el servidor de la escuela bloque el uso de telnet y esta porotegido no se pudo hacer la ototalida de este punto*
 
-```sh
-$ telnet HOST PORT
-```
-
-3. Antes de que el servidor cierre la conexión por falta de comunicación:
-
-Revise el RFC del protocolo HTTP, sobre cómo realizar una petición GET.
-Debe lucir más o menos de esta forma:
-
-```yml
-GET /this-is-the-url/with-a-resource.html HTTP/1.0
-Host: www.escuelaing.edu.co
-```
-
-Con esto, solicite al servidor el recurso `sssss/abc.html`, usando la versión 1.0 de HTTP.
-
-Asegúrese de presionar ENTER dos veces después de ingresar el comando.
-
-Revise el resultado obtenido.
 
 - ¿Qué codigo de error sale?, revise el significado del mismo en la lista de códigos de estado HTTP.
 - ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?
 - Responder en el README.md según lo indicado en la última sección de este laboratorio (ENTREGA).
-
-4. Realice una nueva conexión con telnet, esta vez a:
-```yml
-Host: www.httpbin.org
-Puerto: 80
-Versión HTTP: 1.1
-```
-
-Ahora, solicite (GET) el recurso /html. ¿Qué se obtiene como resultado?
-
-¡Muy bien!, ¡Acaba de usar del protocolo HTTP sin un navegador Web!. Cada vez que se usa un navegador, éste se conecta a un servidor HTTP, envía peticiones
-del protocolo HTTP, espera el resultado de las mismas, y si se trata de contenido HTML lo interpreta y dibuja.
-
-5. Seleccione el contenido HTML de la respuesta y copielo al cortapapeles `CTRL-SHIFT-C`. Ejecute el comando wc (word count) para contar palabras con la
-opción -c para contar el número de caracteres:
-```sh
-$ wc -c
-```
-
-Pegue el contenido del portapapeles con `CTRL-SHIFT-V` y presione `CTRL-D` (fin de archivo de Linux). Si no termina el comando `wc` presione `CTRL-D`
-de nuevo. No presione mas de dos veces CTRL-D indica que se termino la entrada y puede cerrarle la terminal. Debe salir el resultado de la cantidad de
-caracteres que tiene el contenido HTML que respondió el servidor.
-
-Claro está, las peticiones GET son insuficientes en muchos casos. Investigue: ¿Cuál esla diferencia entre los verbos GET y POST? ¿Qué otros tipos de
-peticiones existen?
-7. En la practica no se utiliza telnet para hacer peticiones a sitios web sino el comando curl con ayuda de la linea de comandos: 
-```sh
-$ curl "www.httpbin.org"
-```
-Utilice ahora el parámetro -v y con el parámetro -i:
-
-```sh
-$ curl -v www.httpbin.org
-$ curl -i www.httpbin.org
-```
-¿Cuáles son las diferencias con los diferentes parámetros?
+-¿Cuáles son las diferencias con los diferentes parámetros?
 
 ### PARTE II. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
 En este ejercicio, va a implementar una aplicación Web muy básica, haciendo uso de spring MVC.
@@ -120,6 +65,8 @@ Analice las siguientes situaciones:
 Ambos jugadores estan compartiendo una misma instancia de Guess, la calse que diseñe para el funcionamiento del juego.
 
 - Si quisiera qué a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
+
+Almacenar el valor en una cookie o en una variable JavaScript en el lado del cliente. O usar @SessionAttributes de spring.
 
 ## ENTREGA
 - En un README.md colocar lo siguiente:
